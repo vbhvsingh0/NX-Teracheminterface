@@ -2,9 +2,9 @@
 This Perl code enables Surface Hopping dynamics on Newton-X with TeraChem.
 
 This code requires Newton-X installed on your computer along with TeraChem. The interface was created by Vaibhav Singh*, Tolga Karsilli**, Todd Martinez***, Spiridoula Matsika*
-* Temple University, Philadelphia, USA
-** Stanford university, USA
-** University of Loisiana, Lafayette, USA
+ * Temple University, Philadelphia, USA
+ ** Stanford university, USA
+ ** University of Loisiana, Lafayette, USA
 
 Instructions to use the code:
 
