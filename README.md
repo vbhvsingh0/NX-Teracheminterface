@@ -23,9 +23,9 @@ A. Running JOB_AD (adiabatic) with CASSCF
 B. Running JOB_NAD (non-adiabatic) with CASSCF
 
 1) make 3 directories in JOB_NAD as described below
-	a)   NAD_N1N0 : This directory should contain the non-adiabatic couplings in between the current state and the state below. Note-If the current state is the ground state, just copy all the files from NAD_N1N2 here.
-	b)  NAD_N1N2 : This directory should contain the non-adiabatic couplings in between the current state and the state above. In the case of the ground state, the coupling is in between state 1 and state 2. Note: if the current state is the highest excited state, just copy all the files from NAD_N1N0 here. 
-	c) GRAD     : This directory just calculates the gradient of the current state.
+a)   NAD_N1N0 : This directory should contain the non-adiabatic couplings in between the current state and the state below. Note-If the current state is the ground state, just copy all the files from NAD_N1N2 here.
+b)  NAD_N1N2 : This directory should contain the non-adiabatic couplings in between the current state and the state above. In the case of the ground state, the coupling is in between state 1 and state 2. Note: if the current state is the highest excited state, just copy all the files from NAD_N1N0 here. 
+c) GRAD     : This directory just calculates the gradient of the current state.
 
 3) In addition to the 1st point above, all the points in 'A' should also be satisfied. Note that NACs in Terachem are saved as grad.xyz, here under the directories JOB_NAD/NAD_N1Ni/scr.geom/
 
