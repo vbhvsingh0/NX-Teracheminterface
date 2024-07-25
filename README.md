@@ -23,11 +23,11 @@ A. Running JOB_AD (adiabatic) with CASSCF
 B. Running JOB_NAD (non-adiabatic) with CASSCF
 
 1) make 3 directories in JOB_NAD as described below
-	i)   NAD_N1N0 : This directory should contain the non-adiabatic couplings in between the current state and the state below. Note-If the current state is the ground state, just copy all the files from NAD_N1N2 here.
-	ii)  NAD_N1N2 : This directory should contain the non-adiabatic couplings in between the current state and the state above. In the case of the ground state, the coupling is in between state 1 and state 2. Note: if the current state is the highest excited state, just copy all the files from NAD_N1N0 here. 
-	iii) GRAD     : This directory just calculates the gradient of the current state.
+	*i)   NAD_N1N0 : This directory should contain the non-adiabatic couplings in between the current state and the state below. Note-If the current state is the ground state, just copy all the files from NAD_N1N2 here.
+	**ii)  NAD_N1N2 : This directory should contain the non-adiabatic couplings in between the current state and the state above. In the case of the ground state, the coupling is in between state 1 and state 2. Note: if the current state is the highest excited state, just copy all the files from NAD_N1N0 here. 
+	***iii) GRAD     : This directory just calculates the gradient of the current state.
 
-2) In addition to the 1st point above, all the points in 'A' should also be satisfied. Note that NACs in Terachem are saved as grad.xyz, here under the directories JOB_NAD/NAD_N1Ni/
+2) In addition to the 1st point above, all the points in 'A' should also be satisfied. Note that NACs in Terachem are saved as grad.xyz, here under the directories JOB_NAD/NAD_N1Ni/scr.geom/
 
 3) Input files required:
    a) sh.inp is a important input file which should be present for running dynamics. If not provided vdoth keyword is by default=2 which is not reading non-adiabatic couplings from Terachem output. A sample of sh.out is provided below:
